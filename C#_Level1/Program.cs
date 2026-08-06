@@ -130,6 +130,22 @@ namespace C_Level1
             Console.WriteLine("minDateTimeValue: " + minDateTimeValue);
             Console.WriteLine("maxDateTimeValue: " + maxDateTimeValue);
 
+
+            //TimeSpan
+            // Hours, Minutes, Seconds
+            TimeSpan ts = new TimeSpan(49, 25, 34);
+            Console.WriteLine(ts);
+            Console.WriteLine(ts.Days);
+            Console.WriteLine(ts.Hours);
+            Console.WriteLine(ts.Minutes);
+            Console.WriteLine(ts.Seconds);
+
+            //this will add time span to the date.
+            DateTime newDate = dt.Add(ts);
+
+            Console.WriteLine(newDate);
+
+
             Console.ReadKey();
         }
     }
