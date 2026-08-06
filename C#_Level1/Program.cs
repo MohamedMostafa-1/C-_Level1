@@ -110,13 +110,25 @@ namespace C_Level1
             Console.WriteLine(dt);
 
 
-
+            //ticks
             //number of 100-nanosecond intervals that have elapsed
             //since January 1, 0001, at 00:00:00.000 in the Gregorian calendar. 
-
             Console.WriteLine(DateTime.MinValue.Ticks);  //min value of ticks
             Console.WriteLine(DateTime.MaxValue.Ticks); // max value of ticks
 
+
+            // Datetime Static Fields
+            DateTime currentDateTime = DateTime.Now;  //returns current date and time
+            DateTime todaysDate = DateTime.Today; // returns today's date
+            DateTime currentDateTimeUTC = DateTime.UtcNow;// returns current UTC date and time
+            DateTime maxDateTimeValue = DateTime.MaxValue; // returns max value of DateTime
+            DateTime minDateTimeValue = DateTime.MinValue; // returns min value of DateTime
+
+            Console.WriteLine("currentDateTime: " + currentDateTime);
+            Console.WriteLine("Today: " + todaysDate);
+            Console.WriteLine("currentDateTimeUTC: " + currentDateTimeUTC);
+            Console.WriteLine("minDateTimeValue: " + minDateTimeValue);
+            Console.WriteLine("maxDateTimeValue: " + maxDateTimeValue);
 
             Console.ReadKey();
         }
