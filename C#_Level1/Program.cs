@@ -158,14 +158,47 @@ namespace C_Level1
             DateTime dt8 = new DateTime(2016, 12, 31, 5, 10, 20);
             TimeSpan time = new TimeSpan(10, 5, 25, 50);
 
-            Console.WriteLine(dt2 + time); // 1/10/2017 10:36:10 AM
-            Console.WriteLine(dt2 - dt1); //377.05:10:20
-            Console.WriteLine(dt1 == dt2); //False
-            Console.WriteLine(dt1 != dt2); //True
-            Console.WriteLine(dt1 > dt2); //False
-            Console.WriteLine(dt1 < dt2); //True
-            Console.WriteLine(dt1 >= dt2); //False
-            Console.WriteLine(dt1 <= dt2);//True
+            Console.WriteLine(dt8 + time); // 1/10/2017 10:36:10 AM
+            Console.WriteLine(dt8 - dt7); //377.05:10:20
+            Console.WriteLine(dt7 == dt8); //False
+            Console.WriteLine(dt7 != dt8); //True
+            Console.WriteLine(dt7 > dt8); //False
+            Console.WriteLine(dt7 < dt8); //True
+            Console.WriteLine(dt7 >= dt8); //False
+            Console.WriteLine(dt7 <= dt8);//True
+
+
+            // Convert String to DateTime
+            /*
+              A valid date and time string can be converted to a DateTime object
+              using Parse(), ParseExact(), TryParse() and TryParseExact() methods.
+              
+              The Parse() and ParseExact() methods will "throw an exception" if the specified string is not a valid representation of a date and time.
+              So, it's recommended to use TryParse() or TryParseExact() method because they return false if a string is not valid.
+             */
+
+          
+            var str = "6/12/2023";
+            DateTime dt9;
+
+            bool isValidDate = DateTime.TryParse(str , out dt9);
+
+            if (isValidDate)
+                Console.WriteLine(dt9);
+            else
+                Console.WriteLine($"{str} is not a valid date string");
+
+            //invalid string date
+            var str2 = "6/65/2023";
+            DateTime dt10;
+
+
+            var isValidDate2 = DateTime.TryParse(str2, out dt10);
+
+            if (isValidDate2)
+                Console.WriteLine(dt10);
+            else
+                Console.WriteLine($"{str2} is not a valid date string");
 
             Console.ReadKey();
         }
