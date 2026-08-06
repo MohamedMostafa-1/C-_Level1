@@ -303,6 +303,12 @@ namespace C_Level1
             Console.WriteLine("Average: " + numbers.Average());
 
 
+            //C# Math
+            Math.Max(5, 10);
+            Math.Min(5, 10);
+            Math.Sqrt(64);
+            Math.Abs(-4.7);
+            Math.Round(9.99);
 
 
 
