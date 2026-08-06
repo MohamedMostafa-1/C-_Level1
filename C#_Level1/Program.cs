@@ -180,7 +180,6 @@ namespace C_Level1
           
             var str = "6/12/2023";
             DateTime dt9;
-
             bool isValidDate = DateTime.TryParse(str , out dt9);
 
             if (isValidDate)
@@ -188,17 +187,47 @@ namespace C_Level1
             else
                 Console.WriteLine($"{str} is not a valid date string");
 
+
             //invalid string date
             var str2 = "6/65/2023";
             DateTime dt10;
-
-
             var isValidDate2 = DateTime.TryParse(str2, out dt10);
 
             if (isValidDate2)
                 Console.WriteLine(dt10);
             else
                 Console.WriteLine($"{str2} is not a valid date string");
+
+
+            // string
+            string S1 = "Mohammed Abu-Hadhoud";
+
+            Console.WriteLine(S1.Length);
+
+            //this will take 5 characters staring position 2
+            Console.WriteLine(S1.Substring(2, 5));
+            Console.WriteLine(S1.ToLower());
+            Console.WriteLine(S1.ToUpper());
+            Console.WriteLine(S1[2]);
+            Console.WriteLine(S1.Insert(3, "KKKK"));
+            Console.WriteLine(S1.Replace("m", "*"));
+            Console.WriteLine(S1.IndexOf("m"));
+            Console.WriteLine(S1.Contains("m"));
+            Console.WriteLine(S1.Contains("x"));
+            Console.WriteLine(S1.LastIndexOf("m"));
+
+            string S2 = "Ali,Ahmed,Khalid";
+
+            string[] NamesList = S2.Split(',');
+
+            Console.WriteLine(NamesList[0]);
+            Console.WriteLine(NamesList[1]);
+            Console.WriteLine(NamesList[2]);
+
+            string S3 = "  Abu-Hadhoud  ";
+            Console.WriteLine(S3.Trim());
+            Console.WriteLine(S3.TrimStart());
+            Console.WriteLine(S3.TrimEnd());
 
             Console.ReadKey();
         }
