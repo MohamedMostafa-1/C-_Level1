@@ -85,6 +85,15 @@ namespace C_Level1
               Runtime = البرنامج بدأ يشتغل فعليًا.
              */
 
+
+            //DateTime
+            DateTime dt = new DateTime();
+
+            Console.WriteLine(dt);
+
+
+
+
             Console.ReadKey();
         }
     }
