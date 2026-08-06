@@ -11,6 +11,16 @@ namespace C_Level1
             return x + y;
         }
 
+        // You should use static if you want to call the method without having obejct.
+        static void PrintMyName()
+        {
+            Console.WriteLine("Mohamed Mostafa ^_^ ");
+        }
+        static void MyMethod(string child1, string child2, string child3)
+        {
+            Console.WriteLine("The youngest child is: " + child3);
+        }
+
         enum enWeekDays
         {
             Monday,     // 0
@@ -310,7 +320,12 @@ namespace C_Level1
             Math.Abs(-4.7);
             Math.Round(9.99);
 
+            //Methods
+            //You should use static if you want to call the method without having obejct.
+            PrintMyName();
 
+            //see the order of sending parameters is not important.
+            MyMethod(child3: "Omar", child1: "Saqer", child2: "Hamza");
 
             Console.ReadKey();
         }
