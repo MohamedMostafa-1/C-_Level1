@@ -87,8 +87,26 @@ namespace C_Level1
 
 
             //DateTime
-            DateTime dt = new DateTime();
+            //assigns default value 01/01/0001 00:00:00
+            DateTime dt1 = new DateTime();
 
+            //assigns year, month, day
+            DateTime dt2 = new DateTime(2023, 12, 31);
+
+            //assigns year, month, day, hour, min, seconds
+            DateTime dt3 = new DateTime(2023, 12, 31, 5, 10, 20);
+
+            //assigns year, month, day, hour, min, seconds, UTC timezone
+            DateTime dt4 = new DateTime(2023, 12, 31, 5, 10, 20, DateTimeKind.Utc);
+
+            // Current DateTime
+            DateTime dt = new DateTime();
+            dt = DateTime.Now;
+            
+            Console.WriteLine(dt1);
+            Console.WriteLine(dt2);
+            Console.WriteLine(dt3);
+            Console.WriteLine(dt4);
             Console.WriteLine(dt);
 
 
