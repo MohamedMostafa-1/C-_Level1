@@ -240,6 +240,25 @@ namespace C_Level1
             string fullName = $"Mr. {firstName} {lastName}, Code: {code}";
             Console.WriteLine(fullName);
 
+
+            //Implicit Casting
+            int myint = 17;
+            double dbl = myint;
+            
+            //Explicit Casting
+            double myDouble = 17.58;
+            int myInt =(int) myDouble;
+
+            //Type Conversion Methods
+            bool myBool = true;
+
+            Console.WriteLine(Convert.ToString(myInt));    // convert int to string
+            Console.WriteLine(Convert.ToDouble(myInt));    // convert int to double
+            Console.WriteLine(Convert.ToInt32(myDouble));  // convert double to int
+            Console.WriteLine(Convert.ToString(myBool));   // convert bool to string
+
+
+
             Console.ReadKey();
         }
     }
