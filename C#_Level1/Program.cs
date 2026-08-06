@@ -1,5 +1,6 @@
 ﻿using System;
-
+// provides us various methods to use in an array
+using System.Linq;
 
 namespace C_Level1
 {
@@ -271,6 +272,40 @@ namespace C_Level1
 
             reslt = (number % 2 == 0) ? "Even Number" : "Odd Number";
             Console.WriteLine("{0} is {1}", number, reslt);
+
+
+            //Array 
+            int[] arrAge = new int[5];
+            int[] Nums = { 1, 2, 3, 4, 5 };
+            int[,] X = new int[2, 3];
+            int[,] Y = { { 1, 2, 3 }, { 4, 5, 6 } };
+            int[,] Z = new int[2, 3] { { 1, 2, 3 }, { 4, 5, 6 } };
+
+            char[] myArray = { 'H', 'e', 'l', 'l', 'o' };
+
+            foreach (char ch in myArray)
+            {
+                Console.WriteLine(ch);
+            }
+
+
+            int[] numbers = { 51, -1, 2, 14, 18, 40, 178 };
+
+            // get the minimum element
+            Console.WriteLine("Smallest  Element: " + numbers.Min());
+            // Max() returns the largest number in array
+            Console.WriteLine("Largest Element: " + numbers.Max());
+            // compute Count
+            Console.WriteLine("Count : " + numbers.Count());
+            // compute Sum
+            Console.WriteLine("Sum : " + numbers.Sum());
+            // compute the average
+            Console.WriteLine("Average: " + numbers.Average());
+
+
+
+
+
             Console.ReadKey();
         }
     }
