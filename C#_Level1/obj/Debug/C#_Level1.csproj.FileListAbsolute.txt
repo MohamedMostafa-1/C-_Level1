@@ -1,0 +1,7 @@
+C:\Users\Aio\source\repos\C#_Level1\C#_Level1\bin\Debug\C#_Level1.exe.config
+C:\Users\Aio\source\repos\C#_Level1\C#_Level1\bin\Debug\C#_Level1.exe
+C:\Users\Aio\source\repos\C#_Level1\C#_Level1\bin\Debug\C#_Level1.pdb
+C:\Users\Aio\source\repos\C#_Level1\C#_Level1\obj\Debug\C#_Level1.csproj.AssemblyReference.cache
+C:\Users\Aio\source\repos\C#_Level1\C#_Level1\obj\Debug\C#_Level1.csproj.CoreCompileInputs.cache
+C:\Users\Aio\source\repos\C#_Level1\C#_Level1\obj\Debug\C#_Level1.exe
+C:\Users\Aio\source\repos\C#_Level1\C#_Level1\obj\Debug\C#_Level1.pdb
