@@ -258,6 +258,12 @@ namespace C_Level1
             Console.WriteLine(Convert.ToString(myBool));   // convert bool to string
 
 
+            //User Input
+            Console.WriteLine("Enter your age?");
+            //if you dont convert you will get error, and if you enter string you will get error
+            int age = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Your age is: " + age);
+
 
             Console.ReadKey();
         }
