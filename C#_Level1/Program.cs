@@ -142,8 +142,15 @@ namespace C_Level1
 
             //this will add time span to the date.
             DateTime newDate = dt.Add(ts);
-
             Console.WriteLine(newDate);
+
+
+            //Subtraction of two dates results in TimeSpan
+            DateTime dt5 = new DateTime(2023, 2, 21);
+            DateTime dt6 = new DateTime(2023, 2, 25);
+            TimeSpan result = dt6.Subtract(dt5);
+
+            Console.WriteLine("RESULTs: "+ result.Days);
 
 
             Console.ReadKey();
