@@ -327,6 +327,17 @@ namespace C_Level1
             //see the order of sending parameters is not important.
             MyMethod(child3: "Omar", child1: "Saqer", child2: "Hamza");
 
+
+
+            //Random Function In C#
+            Random rnd = new Random();
+            //Use the Next(int min, int max)
+            for (int j = 0; j < 4; j++)
+            {
+                Console.WriteLine(rnd.Next(10 , 20)); // returns random integers >= 10 and < 20
+            }
+
+
             Console.ReadKey();
         }
     }
