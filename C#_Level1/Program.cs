@@ -265,6 +265,12 @@ namespace C_Level1
             Console.WriteLine("Your age is: " + age);
 
 
+            // Ternary Operator
+            int number = 12;
+            string reslt;
+
+            reslt = (number % 2 == 0) ? "Even Number" : "Odd Number";
+            Console.WriteLine("{0} is {1}", number, reslt);
             Console.ReadKey();
         }
     }
